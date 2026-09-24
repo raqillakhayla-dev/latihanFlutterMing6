@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
 
         body: TabBarView(
           children: [
-            Column(
+            ListView(
               children: [
                 Card(
                   elevation: 5,
@@ -58,6 +58,132 @@ class _HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text("lele"),
                     subtitle: Text('qila imut'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
                     trailing: Text('50', style: TextStyle(color: Colors.green)),
                   ),
                 ),
