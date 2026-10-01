@@ -42,178 +42,331 @@ class _HomePageState extends State<HomePage> {
           children: [
             ListView(
               children: [
-                Card(
+
+                Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child:Card(
                   elevation: 5,
                   child: ListTile(
                     leading: Icon(Icons.person),
                     title: Text("Qila imut"),
                     subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                    trailing: Text('50', style: TextStyle(color: Colors.green),
+                    ),
                   ),
+                ),
                 ),
 
-                Card(
+                Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child:Card(
                   elevation: 5,
                   child: ListTile(
                     leading: Icon(Icons.person),
-                    title: Text("lele"),
-                    subtitle: Text('qila imut'),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
                     trailing: Text('50', style: TextStyle(color: Colors.green)),
                   ),
                 ),
+                ),Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child:Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                ),Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child:Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                ),
+                Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child:Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                ),
+                Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child:Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Qila imut"),
+                    subtitle: Text('Beli jco yuu'),
+                    trailing: Text('50', style: TextStyle(color: Colors.green),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
 
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-              ],
-            ),
-
-            Column(
+            ListView(
               children: [
-                ListTile(
+                Padding(
+                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
+                  child: Card(
+                    elevation: 5,
+                  child:ListTile(
                   leading: Icon(Icons.add_circle_outline_sharp),
                   title: Text('My status'),
                   subtitle: Text('Tap to add status update'),
                 ),
-                Text('Recent updates'),
-                ListTile(
-                  leading: Icon(Icons.person),
-                  title: Text('lele'),
-                  subtitle: Text('2 minutes ago'),
-                )
-              ],
+              ),
             ),
 
+            Padding(
+                  padding: EdgeInsets.only(left: 30),
+                  child: Text("Recent updates"),
+                ),
 
-            Column(
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation:30,
+                  child: ListTile(
+                leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+                title: Text('lele'),
+                subtitle: Text('2 minutes ago'),
+      ),
+    ),
+                ),
+
+
+    ],
+    ),
+
+
+            ListView(
               children: [
-                ListTile(
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child: ListTile(
                   leading: Icon(Icons.call),
                   title: Text('lele'),
-                  subtitle: Text('15 minutes ago', style: TextStyle(color: Colors.red),),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
                 )
+                ),
+                ),
+            
+
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child:ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('lele'),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
+                )
+                ),
+                ),
+
+                Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child:ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('lele'),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
+                )
+                ),
+                ),
+Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child:ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('lele'),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
+                )
+                ),
+                ),
+Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child:ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('lele'),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
+                )
+                ),
+                ),
+Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child:ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('lele'),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
+                )
+                ),
+                ),
+Padding(
+                padding: EdgeInsets.only(left: 30, right: 30),
+                child: Card(
+                  elevation: 30,
+                  child:ListTile(
+                  leading: Icon(Icons.call),
+                  title: Text('lele'),
+                  subtitle: Text('15 minutes ago', 
+                  style: TextStyle(color: Colors.red),
+                  ),
+                )
+                ),
+                ),
               ],
             ),
           ],
