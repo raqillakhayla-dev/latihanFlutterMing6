@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_lanjut/detail_chat.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,72 +41,23 @@ class _HomePageState extends State<HomePage> {
 
         body: TabBarView(
           children: [
-            ListView(
+            Column(
               children: [
 
                 Padding(
                   padding: EdgeInsetsGeometry.only(left: 30, right: 30),
-                  child:Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green),
-                    ),
-                  ),
-                ),
-                ),
+                  child: InkWell(
+                    onTap: () {
+                      print("Chat ditekan!");
 
-                Padding(
-                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
-                  child:Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                ),Padding(
-                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
-                  child:Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                ),Padding(
-                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
-                  child:Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                ),
-                Padding(
-                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
-                  child:Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Qila imut"),
-                    subtitle: Text('Beli jco yuu'),
-                    trailing: Text('50', style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                ),
-                Padding(
-                  padding: EdgeInsetsGeometry.only(left: 30, right: 30),
-                  child:Card(
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context)=>DetailChat()
+                        )
+                        );
+                    },
+                    child:
+                  Card(
                   elevation: 5,
                   child: ListTile(
                     leading: Icon(Icons.person),
@@ -115,7 +67,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-              ),
+                  ),
+                ),
             ],
           ),
 
