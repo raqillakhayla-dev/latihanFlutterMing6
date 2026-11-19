@@ -1,156 +1,153 @@
-import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
 
-class DetailChat extends StatefulWidget {
-  const DetailChat({super.key});
+  //membuat model pesan, blueprint
+  class Message {
+    final String chat;
+    final bool isme;
 
-  @override
-  State<DetailChat> createState() => _DetailChatState();
-}
+    Message({required this.chat, required this.isme});
+  }
 
-class _DetailChatState extends State<DetailChat> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold( //widget memiliki property dan property memiliki widget, setiap wdiget di awalai huruf kapital
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          }, 
-          icon: Icon(Icons.arrow_back)
-          ),
-          title: Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.only(right: 10),
-                child: CircleAvatar(
-                child: Icon(Icons.person),
-              ),
+  class DetailChat extends StatefulWidget {
+    const DetailChat({super.key});
+
+    @override
+    State<DetailChat> createState() => _DetailChatState();
+  }
+
+
+  class _DetailChatState extends State<DetailChat> {
+    //menambahkan controller
+    TextEditingController textPesan = new TextEditingController();
+
+    final List<Message> pesan = [
+      Message(chat: "Hi!", isme: true),
+      Message(chat: "Hello!", isme: false),
+      Message(chat: "apa kabar?", isme: true),
+      Message(chat: "Alhamdulillah baik", isme: false),
+      Message(chat: "oke!", isme: true),
+    ];
+
+    // memebuat fungsi tombol kirim
+    void kirimPesan() {
+      if(textPesan.text.trim().isEmpty) return;
+
+      setState(() { //untuk perubahan
+        pesan.add(Message(chat: textPesan.text, isme: true));
+      });
+      textPesan.clear();
+
+      Future.delayed(const Duration(seconds: 1),() {
+          if(mounted) {
+            setState(() {
+              pesan.add(Message(chat: "Pesan diterima!", isme: false));
+            });
+        }
+      });
+    }
+
+    @override
+    void dispose() {
+      textPesan.dispose();
+      super.dispose();
+    }
+    
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold( //widget memiliki property dan property memiliki widget, setiap wdiget di awalai huruf kapital
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            }, 
+            icon: Icon(Icons.arrow_back)
+            ),
+            title: Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(right: 10),
+                  child: CircleAvatar(
+                  child: Icon(Icons.person),
                 ),
-              Text("raqilla Imut sekali")
+                  ),
+                Text("raqilla Imut sekali")
+              ],
+            ),
+            actions: [
+              IconButton(
+            onPressed: () {
+              debugPrint("video call");
+            }, 
+            icon: Icon(Icons.videocam),
+            ),
+            IconButton(
+            onPressed: () {
+              debugPrint("telepon");
+            }, 
+            icon: Icon(Icons.call),
+            ),
+            IconButton(
+            onPressed: () {
+              debugPrint("Membuka menu lain");
+            }, 
+            icon: Icon(Icons.more_vert),
+            ),
+
             ],
           ),
-          actions: [
-            IconButton(
-          onPressed: () {
-            debugPrint("video call");
-          }, 
-          icon: Icon(Icons.videocam),
-          ),
-          IconButton(
-          onPressed: () {
-            debugPrint("telepon");
-          }, 
-          icon: Icon(Icons.call),
-          ),
-          IconButton(
-          onPressed: () {
-            debugPrint("Membuka menu lain");
-          }, 
-          icon: Icon(Icons.more_vert),
-          ),
-
-          ],
-        ),
-      body: Column(
-children: [
-  Expanded(
-    child: ListView(
-      padding: EdgeInsets.all(20),
-      children: [
-        Align(
-          alignment: Alignment.centerRight,
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.green[50],
-              borderRadius: BorderRadius.circular(10)
+        body: Column(
+  children: [
+    Expanded(
+      child: ListView.builder(
+        itemCount: pesan.length,
+        itemBuilder: (context, index) {
+          final psn = pesan[index];
+          return Align(
+            alignment: psn.isme ? Alignment.centerRight : Alignment.centerLeft,
+            child: Container(
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                color: psn.isme ? Colors.green : Colors.grey[300],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(psn.chat,
+                style: TextStyle(
+                  color: psn.isme ? Colors.white : Colors.black,
+                ),
+              ),
             ),
-            child: Text("Hi!"),
-          )
-        ),
-
-         Align(
-          alignment: Alignment.centerLeft,
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.yellow[50],
-              borderRadius: BorderRadius.circular(10)
-            ),
-            child: Text("Hello!"),
-          )
-        ),
-
-         Align(
-          alignment: Alignment.centerRight,
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.green[50],
-              borderRadius: BorderRadius.circular(10)
-            ),
-            child: Text("apa kabar?"),
-          )
-        ),
-
-         Align(
-          alignment: Alignment.centerLeft,
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.yellow[50],
-              borderRadius: BorderRadius.circular(10)
-            ),
-            child: Text("Alhamdulillah baik"),
-          )
-        ),
-
-         Align(
-          alignment: Alignment.centerRight,
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.green[50],
-              borderRadius: BorderRadius.circular(10)
-            ),
-            child: Text("oke!"),
-          )
-        ),
-
-      ],
-    )
-    ),
-    
-    Padding(
-      padding: EdgeInsetsGeometry.all(10),
-      child: Row(
-      children: [
-        Expanded(
-          child:TextField(
-            decoration: InputDecoration(
-              hintText: 'Tulis Pesan...',
-              border: OutlineInputBorder()
-            ),
-          )
-        ),
-        IconButton(
-          onPressed: () {
-            debugPrint("mengirim pesan");
-          }, 
-          icon: Icon(Icons.send)
-          )
-
-      ],
-    )
-    )
-    ],
+          );
+        }
+        )
       ),
-    );
+      
+      Padding(
+        padding: EdgeInsetsGeometry.all(10),
+        child: Row(
+        children: [
+          Expanded(
+            child:TextField(
+              controller: textPesan,
+              decoration: InputDecoration(
+                hintText: 'Tulis Pesan...',
+                border: OutlineInputBorder()
+              ),
+            )
+          ),
+          IconButton(
+            onPressed: () {
+              kirimPesan();
+            }, 
+            icon: Icon(Icons.send)
+            )
+
+        ],
+      )
+      )
+      ],
+        ),
+      );
+    }
   }
-}
